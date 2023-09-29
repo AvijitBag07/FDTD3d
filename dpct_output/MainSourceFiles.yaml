@@ -1,0 +1,589 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          1563
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          1684
+    Length:          30
+    ReplacementText: '#include "FDTD3dGPUKernel.dp.hpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          1714
+    Length:          0
+    ReplacementText: "\n#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2011
+    Length:          32
+    ReplacementText: 'DPCT_CHECK_ERROR(deviceCount = dpct::dev_mgr::instance().device_count())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2253
+    Length:          21
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2305
+    Length:          23
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2329
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2355
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2382
+    Length:          14
+    ReplacementText: 'get_global_mem_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2976
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2989
+    Length:          0
+    ReplacementText: '(1, 1, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          2993
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          3005
+    Length:          0
+    ReplacementText: '(1, 1, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          3724
+    Length:          32
+    ReplacementText: 'DPCT_CHECK_ERROR(deviceCount = dpct::dev_mgr::instance().device_count())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          3869
+    Length:          0
+    ReplacementText: "  /*\n  DPCT1093:18: The \"targetDevice\" device may be not the one intended for use. Adjust the selected device if needed.\n  */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          3887
+    Length:          13
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          3914
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          3972
+    Length:          65
+    ReplacementText: 'DPCT_CHECK_ERROR(bufferOut = sycl::malloc_device<float>(paddedVolumeSize, dpct::get_default_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4065
+    Length:          64
+    ReplacementText: 'DPCT_CHECK_ERROR(bufferIn = sycl::malloc_device<float>(paddedVolumeSize, dpct::get_default_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4677
+    Length:          25
+    ReplacementText: 'dpct::kernel_function_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4733
+    Length:          21
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_kernel_function_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4768
+    Length:          0
+    ReplacementText: '(const void *)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4792
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4844
+    Length:          18
+    ReplacementText: max_work_group_size
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          4892
+    Length:          10
+    ReplacementText: 'dimBlock[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5067
+    Length:          10
+    ReplacementText: 'dimBlock[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5235
+    Length:          9
+    ReplacementText: 'dimGrid[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5261
+    Length:          30
+    ReplacementText: 'ceil((float)dimx / dimBlock[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5295
+    Length:          9
+    ReplacementText: 'dimGrid[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5321
+    Length:          30
+    ReplacementText: 'ceil((float)dimy / dimBlock[1])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5392
+    Length:          10
+    ReplacementText: 'dimBlock[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5404
+    Length:          10
+    ReplacementText: 'dimBlock[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5455
+    Length:          9
+    ReplacementText: 'dimGrid[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5466
+    Length:          9
+    ReplacementText: 'dimGrid[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5520
+    Length:          10
+    ReplacementText: 'dimBlock[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5543
+    Length:          10
+    ReplacementText: 'dimBlock[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5655
+    Length:          10
+    ReplacementText: 'dimBlock[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5667
+    Length:          10
+    ReplacementText: 'dimBlock[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5782
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5875
+    Length:          53
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          5929
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6029
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6123
+    Length:          53
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6177
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6266
+    Length:          18
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6285
+    Length:          7
+    ReplacementText: 'stencil.get_ptr()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6338
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6868
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:3: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          6872
+    Length:          137
+    ReplacementText: "dpct::get_default_queue().submit(\n      [&](sycl::handler &cgh) {\n        stencil.init();\n\n        auto stencil_ptr_ct1 = stencil.get_ptr();\n\n        /*\n        DPCT1101:19: 'k_blockDimMaxY + 2 * RADIUS' expression was replaced with a value. Modify the code to use the original expression, provided in comments, if it is correct.\n        */\n        /*\n        DPCT1101:20: 'k_blockDimX + 2 * RADIUS' expression was replaced with a value. Modify the code to use the original expression, provided in comments, if it is correct.\n        */\n        sycl::local_accessor<float, 2> tile_acc_ct1(sycl::range<2>(24/*k_blockDimMaxY + 2 * RADIUS*/, 40/*k_blockDimX + 2 * RADIUS*/), cgh);\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(dimGrid * dimBlock, dimBlock), \n          [=](sycl::nd_item<3> item_ct1) {\n            FiniteDifferencesKernel(bufferDst, bufferSrc, dimx, dimy, dimz, item_ct1, stencil_ptr_ct1, tile_acc_ct1);\n          });\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          7009
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          7396
+    Length:          23
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_current_device().queues_wait_and_throw())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          7512
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          7568
+    Length:          53
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          7622
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          8502
+    Length:          18
+    ReplacementText: 'DPCT_CHECK_ERROR(sycl::free(bufferIn, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          8520
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          8567
+    Length:          19
+    ReplacementText: 'DPCT_CHECK_ERROR(sycl::free(bufferOut, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Offset:          8586
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d/src/FDTD3dGPU.cu'
+    Digest:          24fcd4efad3c7d7499cf6c8757d2764b
+DpctVersion:     17.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/tcs2/Avijit/cuda-samples'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/home/tcs2/Avijit/cuda-samples/Samples/5_Domain_Specific/FDTD3d'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...
